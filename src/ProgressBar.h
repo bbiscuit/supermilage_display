@@ -12,6 +12,23 @@
 class ProgressBar {
 public:
 
+	/*
+	 * Gets the number of discrete sections which the progress
+	 * bar is split into.
+	 *
+	 * Returns:
+	 * The number of sections.
+	 */
+	unsigned int getNumSections() const;
+
+	/*
+	 * Gets the number of discrete sections which have already
+	 * been completed (filled).
+	 *
+	 * Returns:
+	 * The number of completed sections.
+	 */
+	unsigned int getSectionsFilled() const;
 
 
 private:
