@@ -6,4 +6,8 @@ unsigned int ProgressBar::getNumSections() const {
 
 unsigned int ProgressBar::getSectionsFilled() const {
 	return _sectionsFilled;
-}	
+}
+
+void ProgressBar::setSectionsFilled(unsigned int nf) {
+	_sectionsFilled = nf;
+}

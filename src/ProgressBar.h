@@ -30,6 +30,14 @@ public:
 	 */
 	unsigned int getSectionsFilled() const;
 
+	/*
+	 * Sets the number of sections which have already been
+	 * completed (filled).
+	 *
+	 * Params:
+	 * nf -> The number of sections that have been filled.
+	 */
+	void setSectionsFilled(unsigned int nf);
 
 private:
 
