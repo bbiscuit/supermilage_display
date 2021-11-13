@@ -12,6 +12,22 @@
 class ProgressBar {
 public:
 
+	// # CONSTRUCTORS
+	
+	/*
+	 * Constructor for ProgressBar instances.
+	 *
+	 * Params:
+	 * center -> The absolute positioning at which to draw the
+	 * progress bar widget.
+	 * numSections -> The number of discrete sections the progress
+	 * bar is split into.
+	 */
+	ProgressBar(juce::Point<int> center, unsigned int numSections);
+
+
+	// # ACCESSORS
+
 	/*
 	 * Gets the number of discrete sections which the progress
 	 * bar is split into.
@@ -58,5 +74,5 @@ private:
 	/*
 	 * The position on the screen of the progress bar.
 	 */
-	juce::Point<int> center;
+	juce::Point<int> _center;
 };
