@@ -6,6 +6,10 @@ ProgressBar::ProgressBar(juce::Point<int> center, unsigned int numSections) {
 	_sectionsFilled = 0;
 }
 
+void ProgressBar::draw(juce::Graphics& g) const {
+	// FIXME, I don't know how to do this
+}
+
 unsigned int ProgressBar::getNumSections() const {
 	return _numSections;
 }

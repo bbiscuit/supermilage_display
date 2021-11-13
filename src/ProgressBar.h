@@ -26,6 +26,20 @@ public:
 	ProgressBar(juce::Point<int> center, unsigned int numSections);
 
 
+
+	// # JUCE METHODS
+	
+	/*
+	 * Draws the progress bar into the given graphics context.
+	 *
+	 * Params:
+	 * g -> the graphics context into which to draw the progress
+	 * bar.
+	 */
+	void draw(juce::Graphics& g) const;
+
+
+
 	// # ACCESSORS
 
 	/*
